@@ -3,12 +3,46 @@
 * Graphs
 ** Topological Sort
    - test at [[http://codeforces.com/contest/47/problem/B]]
+** kruskal
+   - http://codeforces.com/contest/160/problem/D
 ** Max Flow - Edmonds Kark and/or Push/Relabel
    - test at [[http://codeforces.com/contest/271/problem/D]]
 ** Bipartite Matching - DFS / Hopcroft Karp
    - test at [[http://codeforces.com/contest/387/problem/D]]
+** Hungarian algorithm
 ** Gomory-Hu Tree
    - test at [[http://codeforces.com/contest/343/problem/E]]
 ** Link-Cut Tree
    - test at [[http://codeforces.com/contest/117/problem/E]]
    - test at [[http://codeforces.com/contest/19/problem/E]]
+
+* Geometry
+** line intersection 
+   - http://codeforces.com/contest/75/problem/E
+** find circle from three points
+** reflect point across line
+** convex hull 
+   - http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=geometry2
+   - http://codeforces.ru/problemset/problem/166/B
+		
+** convex hull trick (slightly related)
+   - http://wcipeg.com/wiki/Convex_hull_trick
+   - http://codeforces.com/contest/311/problem/B
+		
+		
+* Dynamic Programming
+** Bitmasks
+   - http://codeforces.com/contest/385/problem/D
+		
+		
+* Range minimum query:
+** segment tree
+   - http://codeforces.com/contest/276/problem/C
+		
+* Lowest common ancestor:
+  - http://codeforces.com/contest/231/problem/E
+		
+* Fenwick Tree
+  - http://codeforces.com/contest/196/problem/D
+
+
