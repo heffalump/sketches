@@ -45,4 +45,12 @@
 * Fenwick Tree
   - http://codeforces.com/contest/196/problem/D
 
+* Strings
+** Trie
+   - http://codeforces.com/contest/271/problem/D
+** Rabin Karp Hashing
+   - http://codeforces.com/contest/271/problem/D
+** Suffix automaton
+   - reference http://e-maxx.ru/algo/suffix_automata
+   - http://codeforces.com/contest/235/problem/C
 
