@@ -50,6 +50,8 @@
    - http://codeforces.com/contest/271/problem/D
 ** Rabin Karp Hashing
    - http://codeforces.com/contest/271/problem/D
+** Knuth Morris Pratt
+   - codeforces 93 div2 D. div1 B.  
 ** Suffix automaton
    - reference http://e-maxx.ru/algo/suffix_automata
    - http://codeforces.com/contest/235/problem/C
