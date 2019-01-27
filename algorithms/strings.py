@@ -17,7 +17,10 @@ def prefix_function(s):
     return pi
 
 
-            
+
+### Needs testing
+
+
 def z_function(s):
     '''Creates the Z-function array for the given string s'''
     z = [0]
@@ -40,19 +43,17 @@ def z_function(s):
 
 def make_suffix_array(s):
     '''Creates a suffix array for the given string s in n(log(n))^2 time, because I'm lazy'''
-
-    min_character = '$'  ## alter this if needed for an artifical minimum
-
-    ## Make intervals for single character strings, sort by those letters
-
-    ## Conert the order of those intervals into a map from interval -> position
-
-    ## REpeatedly: create intervals of double the length.  sort them by using as a key
-    ## the ordered pair of the first half of the intervals position, second half of the
-    ## intervals position
-
-    ## once we have intervals for length > length of s, their positions are the suffix array
-    ## using the left bound of the interval 
+    n = len(s)
+    ranges = [n] + sorted([i for i in range(n)], key = lambda x: s[x])
+    order = [0] * (n + 1)
+    l = 1  ## interval length
+    while (l < 2 * n):
+        for (ord, ind) in enumerate(ranges):
+            order[ind] = ord
+        ranges = sorted([i for i in range(n + 1)],
+                        key = lambda x: (order[x], order[(x + l) % (n + 1)]))
+        l *= 2
+    return [i - 1 for i in order[0:n]]
 
 
-    return
+
