@@ -18,17 +18,14 @@ def prefix_function(s):
 
 
 
-### Needs testing
-
-
+### Works, but timed out on some codeforces tests.  May need to reimplement in C++
 def z_function(s):
     '''Creates the Z-function array for the given string s'''
-    z = [0]
+    z = [0] * n
     n = len(s)
     l = 0
     r = 1
     for i in range(1, n):
-        z.append(0)
         if i < r:
             z[i] = min(z[i - l], r - i)
         while i + z[i] < n and s[i + z[i]] == s[z[i]]:
@@ -39,9 +36,9 @@ def z_function(s):
     return z
 
 
-### Suffix Arrays
 
-def make_suffix_array(s):
+### Not Battle Tested
+def suffix_array(s):
     '''Creates a suffix array for the given string s in n(log(n))^2 time, because I'm lazy'''
     n = len(s)
     ranges = [n] + sorted([i for i in range(n)], key = lambda x: s[x])
